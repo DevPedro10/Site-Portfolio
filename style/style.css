@@ -1,0 +1,220 @@
+@import url(./config.css);
+
+header {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    padding: 0 7rem;
+    box-sizing: border-box;
+    color: white;
+    height: 60px;
+    background-color: #222222;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+header #title {
+    font-size: 1.9rem;
+    white-space: nowrap;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+}
+
+header #title::before{
+    content: "< ";
+}
+#title:hover {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #FFD700;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s;
+}
+
+
+
+header #title::after {
+    content: " />";
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+}
+
+.link-nav {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #CCC;
+    position: relative;
+    padding: 5px 0;
+}
+
+.link-nav::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+}
+
+.link-nav:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#btn-mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Menu Header */
+
+@media screen and (max-width: 1000px) {
+    header {
+        border: none;
+    }
+
+    header nav #list {
+        display: block;
+        width: 100%;
+        position: absolute;
+        z-index: 1000;
+        top: 60px;
+        left: 0;
+        background: #2b2b2b;
+        height: 0px;
+        transition: .4s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    
+    nav.active #list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.7rem;
+        height: calc(100vh - 60px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #list li {
+        padding: 1rem 0;
+        margin: 0 2rem;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    .link-nav {
+        font-size: 1.7rem;
+        padding-bottom: 10px;
+    }
+
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburguer {
+        color: white;
+        width: 30px;
+        border-top: 3px solid;
+        transform: rotate(180deg);
+    }
+    #hamburguer::after{
+        margin-top: 5px;
+        content: '';
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: currentColor;
+        transition: .3s ease-in-out;
+    }
+
+    #hamburguer::before {
+        margin-top: 5px;
+        content: '';
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: currentColor;
+        transition: .3s ease-in-out;
+    }
+
+    nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+
+    nav.active #hamburguer::before {
+        width: 30px;
+        transform: rotate(135deg);
+    }
+
+    nav.active #hamburguer::after {
+        width: 30px;
+        transform: rotate(-135deg);
+        position: relative;
+        top: -8px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        padding: 0 1rem;
+    }
+}
