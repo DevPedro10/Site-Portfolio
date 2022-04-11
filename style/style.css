@@ -7,8 +7,8 @@ header {
     box-sizing: border-box;
     color: white;
     height: 60px;
-    background-color: #222222;
-    border-bottom: 1px solid white;
+    background-color: #161616;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.034);
     justify-content: space-between;
     width: 100%;
     align-items: center;
@@ -23,15 +23,6 @@ header #title {
 
 header #title::before{
     content: "< ";
-}
-#title:hover {
-    content: "";
-    height: 2px;
-    width: 100%;
-    background-color: #FFD700;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.6s;
 }
 
 
@@ -59,60 +50,274 @@ ul {
     content: " ";
     width: 0%;
     height: 2px;
-    background-color: #ccc;
+    background-color: #D76A03;
     position: absolute;
     bottom: 0;
     left: 0;
     transition: .3s ease-in-out;
+
 }
 
 .link-nav:hover::after {
     width: 100%;
 }
 
+section.welcome {  
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #161616;
+    color: white;
+}
 
 
 
+section.welcome #comprimento {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+section.welcome h1#name {
+    margin: 10px 0;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.219);
+}
+
+section.welcome h2 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.orangeLetter {
+    color: #D76A03;
+}
+
+#btn-CV {
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 20px 25px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #D76A03;
+    color: #D76A03;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+}
+
+#btn-CV:hover {
+    background-color: #D76A03;
+    color: #2b2b2b;
+}
+
+#unDraw {
+    width: 35%;
+}
+
+#aboutMe {
+    background-color: #121212;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#aboutMe article h1 {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    font-size: 3rem;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+#aboutMe article .dot {
+    font-size: 5rem;
+}
+
+#aboutMe article h1 .dot {
+    color: #D76A03;
+    position: absolute;
+    bottom: 7px;
+    left: -30px;
+}
+
+#aboutMe p {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    width: 500px;
+    margin: 50px 0;
+    line-height: 30px;
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+#aboutMe picture img{
+    width: 350px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.projects {
+    height: 100vh;
+    width: 100%;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.projects h1#titleProjects {
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.allCard {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 10px;
+    width: 300px;
+    height: 420px;
+    padding: 15px;
+    box-shadow: 0px 0px 7px #00000054;
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card h1 {
+    margin: 10px auto;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #D76A03;
+}
+
+.card p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    margin: 30px auto;
+    color: white;
+    font-weight: bold;
+}
+
+.btnsProject {
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnsProject button:first-child {
+    color: #000;
+    background-color: #D76A03;
+
+}
+
+.btnsProject button:last-child {
+    color: white;
+}
 
 
+.btnsProject button {
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 2px solid #D76A03;
+    background-color: transparent;
+    padding: 7px 10px;
+    font-size: 1.2rem;
+}
+
+.repo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.repo img {
+    width: 20px;
+}
 
 
+.btnsProject button:hover {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.295);
+}
+
+#soon {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
 
 
+.skills {
+    background: #121212;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.skillsImg {
+    height: max-content;    
+    width: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.skillsImg > div {
+    width: max-content;
+    background-color: #161616;
+    padding: 20px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.404);
+}
+
+.skillsImg img {
+    width: 100px;
+}
+
+.skills article h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.skills article p {
+    margin-top: 30px;
+    width: 400px;
+    font-size: 1.6rem;
+    color: #969696;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
 
 
-
-
-
-
+/* Menu Header */
 
 #btn-mobile {
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Menu Header */
 
 @media screen and (max-width: 1000px) {
     header {
@@ -186,7 +391,7 @@ ul {
         display: block;
         width: 20px;
         height: 3px;
-        background: currentColor;
+        background-color: #D76A03;
         transition: .3s ease-in-out;
     }
 
