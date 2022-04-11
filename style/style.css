@@ -129,25 +129,6 @@ section.welcome h2 {
     color: white;
 }
 
-#aboutMe article h1 {
-    display: flex;
-    align-items: center;
-    margin: 30px;
-    font-size: 3rem;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    position: relative;
-}
-
-#aboutMe article .dot {
-    font-size: 5rem;
-}
-
-#aboutMe article h1 .dot {
-    color: #D76A03;
-    position: absolute;
-    bottom: 7px;
-    left: -30px;
-}
 
 #aboutMe p {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -297,18 +278,100 @@ section.welcome h2 {
     width: 100px;
 }
 
-.skills article h1 {
+.titleMain {
     font-size: 3rem;
     color: white;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-.skills article p {
+.dot::before {
+    content: '.';
+    font-size: 5rem;
+    position: relative;
+    bottom: 10px;
+    right: 8px;
+    color: #D76A03;
+
+}
+
+.mainP {
     margin-top: 30px;
     width: 400px;
     font-size: 1.6rem;
     color: #969696;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+
+
+.contact {
+    height: 50vh;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+}
+
+.contact form input{
+    display: block;
+}
+
+.contact input, .contact textarea {
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 10px;
+    resize: none;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.contact input:focus::-webkit-input-placeholder,
+.contact textarea:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+
+.contact input::-webkit-input-placeholder,
+.contact textarea::-webkit-input-placeholder {
+    font-size: 0.9rem;
+}
+.contact input,
+.contact textarea {
+    border: none;
+    outline: none;
+}
+
+
+#btnSubmit {
+    cursor: pointer;
+    display: block;
+    background-color: transparent;
+    border: 2px solid #D76A03;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 50px;
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    transition: .2s ease-in-out;
+}
+
+#btnSubmit:hover {
+    background-color: #D76A03;
+    color: #2b2b2b;
+
+}
+
+.svgMidias {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+}
+.icon-svg-midia {
+    width: 40px;
 }
 
 

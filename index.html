@@ -37,7 +37,7 @@
             <img src="assets/me.png" alt="">
         </picture>
         <article>
-            <h1><span class="dot">.</span>Quem Sou</h1>
+            <h1 class="titleMain dot">Quem Sou</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt odit id reiciendis iste sapiente officiis error ratione aspernatur cum nisi?Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         </article>
     </section>
@@ -90,21 +90,43 @@
 
     <section class="skills">
         <article>
-            <h1>Conhecimentos</h1>
+            <h1 class="titleMain dot">Conhecimentos</h1>
             <h2 id="linguageOutput"></h2>
-            <p id="returnDescription">Passe o cursor sobre os ícones para ver sua descrição. </p>
+            <p id="returnDescription" class="mainP">Passe o cursor sobre os ícones para ver sua descrição. </p>
         </article>
-
         <div class="skillsImg">
-            <div id="html5"><img src="assets/img-projects/linguages/html5.svg" alt=""></div>
-            <div id="css3"><img src="assets/img-projects/linguages/css3.svg" alt=""></div>
-            <div id="javascript"><img src="assets/img-projects/linguages/javascript.svg" alt=""></div>
-            <div id="responsible"><img src="assets/img-projects/linguages/responsivo.png" alt=""></div>
-            <div id="git"><img src="assets/img-projects/linguages/git.svg" alt=""></div>
-            <div id="acessibility"><img src="assets/img-projects/linguages/acessibilidade.svg" alt=""></div>
+            <div id="html5"><img src="assets/linguages/html5.svg" alt=""></div>
+            <div id="css3"><img src="assets/linguages/css3.svg" alt=""></div>
+            <div id="javascript"><img src="assets/linguages/javascript.svg" alt=""></div>
+            <div id="responsible"><img src="assets/linguages/responsivo.png" alt=""></div>
+            <div id="git"><img src="assets/linguages/git.svg" alt=""></div>
+            <div id="acessibility"><img src="assets/linguages/acessibilidade.svg" alt=""></div>
 
         </div>
     </section>
+
+    <section class="contact">
+        <div class="midias">
+            <h1 class="titleMain dot">Contato</h1>
+            <p class="mainP">Me contate por alguma mídia social ou me envie um e-mail.</p>
+            <div class="svgMidias">
+                <a href="https://github.com/DevPedro10" target="_blank"><img src="assets/icon-github-fill.svg" class="icon-svg-midia"></a>
+                <a href="https://www.linkedin.com/in/nat%C3%A3-pedro-da-silva-735443218/" target="_blank"><img src="assets/icon-linkedIn.svg" class="icon-svg-midia"></a>
+            </div>
+        </div>
+
+        <form>
+            <input type="text" id="name" placeholder="Nome">
+            <input type="email" id="email" placeholder="exemplo@email.com">
+            <textarea  id="" rows="10" placeholder="Deixe sua mensagem"></textarea>
+
+
+            <button id="btnSubmit" type="submit">Enviar</button>
+        </form>
+    </section>
+
+
+
 
 
 
