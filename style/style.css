@@ -87,10 +87,24 @@ section.welcome h1#name {
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.219);
 }
 
-section.welcome h2 {
+section.welcome #subTitle {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 1.5rem;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+section.welcome #subTitle::after {
+    content: ' |';
+    animation: blink .7s infinite ;
 }
 
 .orangeLetter {
@@ -119,6 +133,16 @@ section.welcome h2 {
 #unDraw {
     min-width: 300px;
     width: 35%;
+    animation: teste infinite 3s alternate;
+}
+
+@keyframes teste {
+    from{
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 #aboutMe {
@@ -138,6 +162,13 @@ section.welcome h2 {
     line-height: 30px;
     font-weight: 200;
     font-size: 1.4rem;
+}
+
+span#bluePYT {
+    color: #2A7EB2;
+}
+span#yellowTHO {
+    color: #FBD35A;
 }
 
 #aboutMe picture img{
@@ -272,10 +303,19 @@ section.welcome h2 {
 
 .skillsImg > div {
     width: max-content;
+    height: max-content;
     background-color: #161616;
     padding: 20px;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.404);
+    cursor: pointer;
+    transition: .8s ease;
 }
+
+.skillsImg > div:hover {
+    box-shadow: 0px 0px 3px #d76903;
+}
+
+
 
 .skillsImg img {
     width: 100px;
@@ -297,8 +337,20 @@ section.welcome h2 {
 
 }
 
+
+.titleNameLinguage {
+    margin-top: calc(50px - 1.6rem);
+    width: max-content;
+    font-size: 1.6rem;
+    color: #d76903;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
 .mainP {
-    margin-top: 30px;
+    margin-top: calc(50px - 1.6rem);
     width: 400px;
     font-size: 1.6rem;
     color: #969696;
@@ -482,7 +534,16 @@ section.welcome h2 {
     header {
         padding: 0 3rem;
     }
+
+    .contact .mainP {
+
+        width: 80% !important;
+        margin: 30px auto;
+    }
+
+
 }
+
 
 @media screen and (max-width: 450px) {
     header {
