@@ -1,13 +1,37 @@
 @import url(./config.css);
 
+/* Animações */
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes tranlateUnDraw {
+    from{
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Header */
+
 header {
     font-family: 'Roboto', sans-serif;
     display: flex;
     padding: 0 7rem;
     box-sizing: border-box;
-    color: white;
+    color: var(--white);;
     height: 60px;
-    background-color: #161616;
+    background-color: var(--dark1);;
     border-bottom: 1px solid rgba(255, 255, 255, 0.034);
     justify-content: space-between;
     width: 100%;
@@ -25,23 +49,21 @@ header #title::before{
     content: "< ";
 }
 
-
-
 header #title::after {
     content: " />";
 }
 
-ul {
+ul#list {
     display: flex;
     gap: 25px;
 }
 
 .link-nav {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 400;
-    color: #CCC;
+    color: var(--gray);
     position: relative;
     padding: 5px 0;
 }
@@ -50,7 +72,7 @@ ul {
     content: " ";
     width: 0%;
     height: 2px;
-    background-color: #D76A03;
+    background-color: var(--mainColor);;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -62,16 +84,18 @@ ul {
     width: 100%;
 }
 
+/* Fim Header */
+
+/* Section de Apresentação */
+
 section.welcome {  
     height: calc(100vh - 60px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background: #161616;
-    color: white;
+    background: var(--dark1);;
+    color: var(--white);
 }
-
-
 
 section.welcome #comprimento {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -93,14 +117,6 @@ section.welcome #subTitle {
     font-size: 1.5rem;
 }
 
-@keyframes blink {
-    0%, 50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 section.welcome #subTitle::after {
     content: ' |';
@@ -108,7 +124,7 @@ section.welcome #subTitle::after {
 }
 
 .orangeLetter {
-    color: #D76A03;
+    color: var(--mainColor);;
 }
 
 #btn-CV {
@@ -117,8 +133,8 @@ section.welcome #subTitle::after {
     padding: 20px 25px;
     background: transparent;
     outline: none;
-    border: 2px solid #D76A03;
-    color: #D76A03;
+    border: 2px solid var(--mainColor);;
+    color: var(--mainColor);;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
@@ -126,8 +142,8 @@ section.welcome #subTitle::after {
 }
 
 #btn-CV:hover {
-    background-color: #D76A03;
-    color: #2b2b2b;
+    background-color: var(--mainColor);;
+    color: var(--dark3);
 }
 
 #unDraw {
@@ -136,24 +152,16 @@ section.welcome #subTitle::after {
     animation: tranlateUnDraw infinite 3s alternate;
 }
 
-@keyframes tranlateUnDraw {
-    from{
-        transform: translateY(20px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
+/* Section About Me */
 
 #aboutMe {
-    background-color: #121212;
+    background-color: var(--dark2);;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color: white;
+    color: var(--white);
 }
-
 
 #aboutMe p {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -165,10 +173,12 @@ section.welcome #subTitle::after {
 }
 
 span#bluePYT {
-    color: #2A7EB2;
+    color: #2A7EB2; 
+    /* Cor Predominante da linguagem Python */
 }
 span#yellowTHO {
     color: #FBD35A;
+    /* Cor Predominante da linguagem Python */
 }
 
 #aboutMe picture img{
@@ -177,10 +187,12 @@ span#yellowTHO {
     border: 1px solid black;
 }
 
+/* Section Projetos */
+
 .projects {
     height: 100vh;
     width: 100%;
-    background-color: #161616;
+    background-color: var(--dark1);;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -191,7 +203,7 @@ span#yellowTHO {
     text-align: center;
     font-size: 2.6rem;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    color: white;
+    color: var(--white);
 }
 
 .allCard {
@@ -224,14 +236,14 @@ span#yellowTHO {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    color: #D76A03;
+    color: var(--mainColor);;
 }
 
 .card p {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     line-height: 20px;
     margin: 30px auto;
-    color: white;
+    color: var(--white);
     font-weight: bold;
 }
 
@@ -242,22 +254,22 @@ span#yellowTHO {
     justify-content: space-between;
 }
 .btnsProject a {
-    color: #000;
+    color: var(--black);
     text-decoration: none;
 }
 
 .btnsProject button:first-child {
-    color: #000;
-    background-color: #D76A03;
+    color: var(--black);
+    background-color: var(--mainColor);;
 
 }
 
 .btnsProject button:last-child {
-    color: white;
+    color: var(--white);
 }
 
 .btnsProject .repo a {
-    color: white;
+    color: var(--white);
 }
 
 
@@ -265,7 +277,7 @@ span#yellowTHO {
     transition: .2s ease-in-out;
     cursor: pointer;
     border-radius: 7px;
-    border: 2px solid #D76A03;
+    border: 2px solid var(--mainColor);;
     background-color: transparent;
     padding: 7px 10px;
     font-size: 1.2rem;
@@ -289,14 +301,15 @@ span#yellowTHO {
 #soon {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     text-align: center;
-    color: white;
+    color: var(--white);
     font-size: 1.6rem;
     font-weight: bold;
 }
 
+/* Section Habilidades */
 
 .skills {
-    background: #121212;
+    background: var(--dark2);;
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -315,7 +328,7 @@ span#yellowTHO {
 .skillsImg > div {
     width: max-content;
     height: max-content;
-    background-color: #161616;
+    background-color: var(--dark1);;
     padding: 20px;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.404);
     cursor: pointer;
@@ -323,10 +336,8 @@ span#yellowTHO {
 }
 
 .skillsImg > div:hover {
-    box-shadow: 0px 0px 3px #d76903;
+    box-shadow: 0px 0px 3px var(--mainColor);
 }
-
-
 
 .skillsImg img {
     width: 100px;
@@ -334,7 +345,7 @@ span#yellowTHO {
 
 .titleMain {
     font-size: 2.7rem;
-    color: white;
+    color: var(--white);
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -344,16 +355,14 @@ span#yellowTHO {
     position: relative;
     bottom: 10px;
     right: 8px;
-    color: #D76A03;
-
+    color: var(--mainColor);;
 }
-
 
 .titleNameLinguage {
     margin-top: calc(50px - 1.6rem);
     width: max-content;
     font-size: 1.6rem;
-    color: #d76903;
+    color: var(--mainColor);
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -364,17 +373,17 @@ span#yellowTHO {
     margin-top: calc(50px - 1.6rem);
     width: 400px;
     font-size: 1.6rem;
-    color: #969696;
+    color: var(--gray2);
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     line-height: 30px;
     font-weight: 300;
 }
 
-
+/* Section Contato */
 
 .contact {
     height: 50vh;
-    background-color: #161616;
+    background-color: var(--dark1);;
     display: flex;
     justify-content: center;
     gap: 150px;
@@ -387,37 +396,37 @@ span#yellowTHO {
 
 .contact input, .contact textarea {
     border-radius: 7px;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     width: 400px;
     margin-bottom: 20px;
     padding: 10px;
     resize: none;
-    background-color: #2b2b2b;
-    color: white;
+    background-color: var(--dark3);
+    color: var(--white);
 }
 
-.contact input:focus::-webkit-input-placeholder,
-.contact textarea:focus::-webkit-input-placeholder{
-    color: transparent;
+.contact input:focus,
+.contact textarea:focus{
+    outline: 1px solid var(--gray2);
 }
 
 .contact input::-webkit-input-placeholder,
 .contact textarea::-webkit-input-placeholder {
     font-size: 0.9rem;
 }
+
 .contact input,
 .contact textarea {
     border: none;
     outline: none;
 }
 
-
 #btnSubmit {
     cursor: pointer;
     display: block;
     background-color: transparent;
-    border: 2px solid #D76A03;
-    color: white;
+    border: 2px solid var(--mainColor);;
+    color: var(--white);
     border-radius: 5px;
     padding: 10px 50px;
     font-size: 1rem;
@@ -426,8 +435,8 @@ span#yellowTHO {
 }
 
 #btnSubmit:hover {
-    background-color: #D76A03;
-    color: #2b2b2b;
+    background-color: var(--mainColor);;
+    color: var(--dark3);
 
 }
 
@@ -436,12 +445,13 @@ span#yellowTHO {
     margin-top: 30px;
     gap: 30px;
 }
+
 .icon-svg-midia {
     width: 40px;
 }
 
 
-/* Menu Header */
+/* Responsivo  Menu Header */
 
 #btn-mobile {
     display: none;
@@ -460,7 +470,7 @@ span#yellowTHO {
         z-index: 1000;
         top: 60px;
         left: 0;
-        background: #2b2b2b;
+        background: var(--dark3);
         height: 0px;
         transition: .4s;
         visibility: hidden;
@@ -499,7 +509,7 @@ span#yellowTHO {
     }
 
     #hamburguer {
-        color: white;
+        color: var(--white);
         width: 30px;
         border-top: 3px solid;
         transform: rotate(180deg);
@@ -520,7 +530,7 @@ span#yellowTHO {
         display: block;
         width: 20px;
         height: 3px;
-        background-color: #D76A03;
+        background-color: var(--mainColor);;
         transition: .3s ease-in-out;
     }
 
@@ -541,21 +551,6 @@ span#yellowTHO {
     }
 }
 
-@media screen and (max-width: 720px) {
-    header {
-        padding: 0 3rem;
-    }
-
-    .contact .mainP {
-
-        width: 80% !important;
-        margin: 30px auto;
-    }
-
-
-}
-
-
 @media screen and (max-width: 450px) {
     header {
         padding: 0 1rem;
@@ -563,10 +558,7 @@ span#yellowTHO {
 }
 
 
-
-/* Responsivo */
-
-
+/* Responsivo das outras Sections */
 
 @media screen and (max-width: 1125px) {
     .projects {
@@ -591,7 +583,6 @@ span#yellowTHO {
         justify-content: center;
         min-width: max-content;
     }
-
 }
 
 @media screen and (max-width: 1100px) {
@@ -618,7 +609,6 @@ span#yellowTHO {
         margin: 100px auto;
     }
 
-
     .skills {
         height: max-content;
         text-align: center;
@@ -632,13 +622,11 @@ span#yellowTHO {
 }
 
 
-
 @media screen and (max-width: 734px) {
     section.welcome #name {
         font-size: 4rem !important;
         margin: 35px auto !important;
     }
-
 
     .projects {
         height: max-content;
@@ -660,8 +648,19 @@ span#yellowTHO {
     }
 }
 
-@media screen and (max-width: 600px)  {
 
+@media screen and (max-width: 720px) {
+    header {
+        padding: 0 3rem;
+    }
+
+    .contact .mainP {
+        width: 80% !important;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .skills {
         height: max-content;
     }

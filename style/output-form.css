@@ -1,17 +1,17 @@
 @import url(./config.css);
 
 body {
-    background-color: #000;
+    background-color: var(--black);
 }
 
 section > div {
     height: 50vh;
 }
 #bg-gray {
-    background-color: #161616;
+    background-color: var(--dark1);
 }
 #bg-black {
-    background-color: #121212;
+    background-color: var(--dark2);
 }
 
 img {
@@ -36,7 +36,7 @@ img {
 h1 {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     position: absolute;
-    color: white;
+    color: var(--white);
     font-size: 1.7rem;
     text-align: center;
 }
