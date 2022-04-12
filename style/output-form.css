@@ -1,0 +1,57 @@
+@import url(./config.css);
+
+body {
+    background-color: #000;
+}
+
+section > div {
+    height: 50vh;
+}
+#bg-gray {
+    background-color: #161616;
+}
+#bg-black {
+    background-color: #121212;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    min-width: 290px;
+    width: 20%;
+    animation: tranlateUnDraw infinite 3s alternate;
+}
+
+@keyframes tranlateUnDraw {
+    from{
+        transform: translate(-50%, -48%);
+    }
+    to {
+        transform: translate(-50%, -52%);
+    }
+}
+
+h1 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    position: absolute;
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+#thanks {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#soon {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

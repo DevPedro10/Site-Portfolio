@@ -10,4 +10,3 @@ function typeWriter(element, time){
 }
 
 typeWriter(subtitulo, 90)
-// typeWriter(returnDescription, 40)

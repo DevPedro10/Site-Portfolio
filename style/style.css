@@ -133,10 +133,10 @@ section.welcome #subTitle::after {
 #unDraw {
     min-width: 300px;
     width: 35%;
-    animation: teste infinite 3s alternate;
+    animation: tranlateUnDraw infinite 3s alternate;
 }
 
-@keyframes teste {
+@keyframes tranlateUnDraw {
     from{
         transform: translateY(20px);
     }
@@ -333,7 +333,7 @@ span#yellowTHO {
 }
 
 .titleMain {
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: white;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
