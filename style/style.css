@@ -141,6 +141,13 @@ section.welcome #subTitle::after {
     transition: .3s ease-in-out;
 }
 
+#btn-CV a {
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+
+
 #btn-CV:hover {
     background-color: var(--mainColor);;
     color: var(--dark3);
