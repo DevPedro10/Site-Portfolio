@@ -210,6 +210,10 @@ span#yellowTHO {
     box-shadow: 0px 0px 7px #00000054;
 }
 
+.card picture img {
+    height: 175px;
+}
+
 .card img {
     border-radius: 10px;
     width: 100%;
@@ -232,11 +236,14 @@ span#yellowTHO {
 }
 
 .btnsProject {
-    
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.btnsProject a {
+    color: #000;
+    text-decoration: none;
 }
 
 .btnsProject button:first-child {
@@ -246,6 +253,10 @@ span#yellowTHO {
 }
 
 .btnsProject button:last-child {
+    color: white;
+}
+
+.btnsProject .repo a {
     color: white;
 }
 
