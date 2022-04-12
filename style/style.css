@@ -560,7 +560,7 @@ span#yellowTHO {
 
 @media screen and (max-width: 450px) {
     header {
-        padding: 0 1rem;
+        padding: 0 1rem !important;
     }
 }
 
@@ -623,6 +623,10 @@ span#yellowTHO {
         padding: 50px 0;
     }
 
+    .titleNameLinguage {
+        width: 100%;
+    }
+
     .skillsImg{
         width: max-content;
     }
@@ -646,6 +650,10 @@ span#yellowTHO {
 
     .contact button {
         margin: auto;
+    }
+
+    .contact {
+        padding-bottom: 70px;
     }
 
     #aboutMe p {

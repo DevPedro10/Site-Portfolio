@@ -16,10 +16,10 @@ section > div {
 
 img {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);    
-    min-width: 290px;
+    min-width: 220px;
     width: 20%;
     animation: tranlateUnDraw infinite 3s alternate;
 }
@@ -43,14 +43,14 @@ h1 {
 
 #thanks {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 #soon {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
 }
