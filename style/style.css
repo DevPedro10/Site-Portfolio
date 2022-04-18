@@ -567,6 +567,8 @@ span#yellowTHO {
 
 /* Responsivo das outras Sections */
 
+/* Width */
+
 @media screen and (max-width: 1125px) {
     .projects {
         height: 200vh;
@@ -693,4 +695,24 @@ span#yellowTHO {
         width: max-content;
         gap: 50px;
     }
+}
+
+/* Height */
+
+@media screen and (max-height: 835px) {
+    #aboutMe {
+        height: max-content;
+        padding: 50px 0;
+    }
+
+    .skills {
+        height: max-content;
+        padding: 50px 0;   
+    }
+
+    .contact {
+        height: max-content;
+        padding: 50px 0;
+    }
+    
 }
