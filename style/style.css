@@ -367,7 +367,7 @@ span#yellowTHO {
 
 .titleNameLinguage {
     min-height: 24px;
-    margin-top: calc(50px - 1.6rem);
+    margin-top: calc(40px - 1.6rem);
     width: max-content;
     font-size: 1.6rem;
     color: var(--mainColor);
@@ -378,7 +378,7 @@ span#yellowTHO {
 }
 
 .mainP {
-    margin-top: calc(50px - 1.6rem);
+    margin-top: calc(40px - 1.6rem);
     width: 400px;
     font-size: 1.6rem;
     color: var(--gray2);
