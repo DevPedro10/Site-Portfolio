@@ -6,10 +6,8 @@ function updateInformation(title, description) {
 
     document.querySelector(title).addEventListener('mouseover', () => {
         returnDescription.innerHTML = description;
-
         if(title === ".html") {
             returnTitle.innerHTML = "html";
-            
         }
         if(title === ".css") {
             returnTitle.innerHTML = "css";
@@ -41,15 +39,15 @@ function updateInformation(title, description) {
 
 const descriptionHTML = "Componente base da web para estruturar elementos usando tags"
 
-const descriptionCSS = "Estilização de componentes, reaproveitamento de classes e flexibilidade com o código."
+const descriptionCSS = "Estilização de componentes, código flexível e limpo"
 
-const descriptionJavascript = "Manipulação ao DOM dando Dinamismo para a página Web, Eventos e Objetos"
+const descriptionJavascript = "Manipulação ao DOM, Dinamismo para a página, Eventos e Objects"
 
-const descriptionResponsive = "Responsividade para dispositivos menores usando elementos Flexíveis"
+const descriptionResponsive = "Adaptação de código para dispositivos menores"
 
 const descriptionGit = "Versacionamento de Código usando os principais Comandos"
 
-const descriptionAcessibility = "Principais meios de acessibilidade, usando contraste de cor, link alternativo, tamanho de fonte, entre outros..."
+const descriptionAcessibility = "Principais meios de acessibilidade como Links, Cores, entre outros..."
 
 
 updateInformation(".html", descriptionHTML)
