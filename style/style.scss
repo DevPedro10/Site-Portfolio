@@ -196,7 +196,7 @@ span#bluePYT {
     /* Cor Predominante da linguagem Python */
 }
 
-span#yellowTHO {
+span#yellowHON {
     color: #FBD35A;
     /* Cor Predominante da linguagem Python */
 }
@@ -456,7 +456,6 @@ span#yellowTHO {
 
     &:hover {
         background-color: var(--mainColor);
-        ;
         color: var(--color5);
     }
 }
@@ -631,8 +630,7 @@ span#yellowTHO {
             }
         }
 
-        #soon,
-        #titleProjects {
+        #soon, #titleProjects {
             margin: 100px auto;
         }
 
@@ -669,12 +667,12 @@ span#yellowTHO {
             width: 300px !important;
         }
 
-        .contact button {
-            margin: auto;
-        }
-
         .contact {
             padding-bottom: 70px;
+
+            button {
+                margin: auto;
+            }
         }
 
         #aboutMe p {
@@ -699,14 +697,14 @@ span#yellowTHO {
     @media screen and (max-width: 600px) {
         .skills {
             height: max-content;
-        }
 
-        .skills article {
-            width: 100%;
-        }
+            article {
+                width: 100%;
+            }
 
-        .skills article * {
-            width: 100%;
+            article * {
+                width: 100%;
+            }
         }
 
         .skillsImg {
